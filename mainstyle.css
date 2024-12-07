@@ -1,0 +1,63 @@
+main{
+    background-color: burlywood;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2opx;
+    margin-bottom: 20px;
+    padding: 0px;
+}
+#h1-style {
+    color:brown;
+    font-size: 2em;
+    background-color: blanchedalmond;
+    margin:0%;
+    height:80px;
+    width:80px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.auto-bio{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 1.5em;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+    /* margin-left:= auto; */
+    /* margin-right:= auto; */
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (Black) on hover */
+li a:hover {
+    background-color: #111;
+}
+
+/* li last child {
+border-right: none;
+} */
+
+ul {
+    position: -webkit-sticky;
+    /*safari*/
+    position: sticky;
+    top: 0;
+}

@@ -1,0 +1,211 @@
+main{
+    background-color: burlywood;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 0;
+    border-top-left-radius: 50px;
+}
+#h1-style { font-family: Georgia, 'Times New Roman', Times, serif;
+    color:brown;
+    font-size: 2em;
+    background-color: blanchedalmond;
+    margin: 0;
+    height: 80px;
+    text-align: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.auto-bio{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 1.5em;
+    padding-top: 20px;
+    padding-bottom: 0px;
+}
+.article-top, .article-bottom{
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+.article-top {
+width: 350px;
+padding: 20px;
+border: 1px solid;
+overflow: auto;
+box-sizing: content-box;
+position: relative;
+top: 0;
+left: 0px;
+right: 0;
+bottom: 0;
+}
+.article-bottom {
+width: 320px;
+padding: 20px;
+border: 1px solid;
+overflow: auto;
+box-sizing: content-box;
+position: relative ;
+top: -10px;
+left: 20px;
+right: 0;
+bottom: 0;
+
+}
+.img-style {
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 50%;
+}
+.portfolio {
+width: 20px;
+}
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: #333;
+padding: 0 20px 0 0;
+display: flex;
+justify-content: center;
+}
+
+li {
+float: left;
+/* margin-left:= auto; */
+/* margin-right:= auto; */
+}
+li a {
+display: block;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+
+/* Transition properties */
+li a:hover {
+background-color: #111;
+transform: scale(1.2);
+transition: transform 2s ease-in-out;
+} 
+/* Add a gray right border to all list items, expect*/
+li {
+border-right: 1px solid ;
+}
+/* Change the link color to #111 (Black) on hover */
+li a:hover {
+background-color: #111;
+}
+
+/* li last child {
+border-right: none;
+} */
+
+ul {
+position: -webkit-sticky;
+/*safari*/
+position: sticky;
+top: 0;
+}
+
+@media (max-width: 608px) {
+.article-bottom {
+width: 320px;
+position: relative;
+top: -10px;
+left: 20px;
+right: 0;
+bottom: 0;
+}
+}
+
+.article-bottom {
+width: 320px;
+position: relative ;
+top: -10px;
+left: 20px;
+right: 0;
+bottom: 0;
+}
+
+.pulse {
+width: 50px;
+height: 50px;
+background-color: rgb(177, 102, 3);
+border-radius: 50%;
+animation: pulse 2s infinite;
+margin-left: auto;
+margin-right: auto;
+}
+@keyframes pulse {
+0% {
+transform: scale(1);
+}
+50% {
+transform: scale(2);
+}
+100% {
+transform: scale(1);
+}
+}
+#copyright {
+background-color: #111;
+margin: 0;
+padding: 40px;
+text-align: center;
+color: #fff;
+}
+.popup {
+position: relative;
+display: inline-block;
+cursor: pointer;
+}
+.popup .popuptext {
+visibility: hidden;
+width: 240px;
+background-color: rgb(109, 97, 97);
+color: #fff;
+text-align: center;
+border-radius: 6px;
+padding: 14px;
+position: absolute;
+z-index: 1;
+bottom: 125%;
+left: 80%;
+margin-left: -80px;
+}
+/* Popup arrow */
+.popup .popuptext::after {
+content: "";
+position: absolute;
+top: 100%;
+left: 50%;
+margin-left: -5px;
+border-width: 5px;
+border-style: solid;
+border-color: #555 transparent transparent transparent;
+}
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+visibility: visible;
+-webkit-animation: fadeIn 1s;
+animation: fadeIn 1s
+}
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+from {opacity: 0;}
+to {opacity: 1;}
+}
+@keyframes fadeIn {
+from {opacity: 0;}
+to {opacity:1 ;}
+}

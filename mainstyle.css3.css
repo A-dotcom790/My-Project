@@ -1,0 +1,33 @@
+/* Default styles for larger screens */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.box {
+    width: 30%;
+    margin-bottom: 20px;
+    background-color: #f0f0f0;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Media query for screens up to 608px */
+@media (max-width: 608px) {.box {
+    width: 45%; /* Adjust width to fit better */
+   }
+}
+
+/* Media query for screens up to 500px */
+@media (max-width: 500px) {
+    .container {
+        flex-direction: column; /* Stack the boxes vertically */
+        align-items: center; /* Center align the elements */
+    }
+.box {
+    width: 80%; /* Increase width for better readability */
+    margin-bottom: 15px;
+}
+}

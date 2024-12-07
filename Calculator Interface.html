@@ -1,0 +1,102 @@
+<!Doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Calculator Interface</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <style>* {
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+        }
+        .calculator {
+            width: 300px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #ffffff;
+        }
+        .display {
+            font-size: 2rem;
+            height:60px;
+            background-color: #222;
+            color: #fff;
+            text-align: right;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .buttons {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+        }
+        button {
+            font-size: 1.5rem;
+            padding: 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button.number {
+            background-color: #e0e0e0;
+            color: #333;
+        }
+        button.operator {
+            background-color: #ff9800;
+            color: white;
+        }
+        button.clear {
+            background-color: #f44336;
+            color: white;
+        }
+        .button.equals {
+            background-color: #4caf50;
+            color: white
+        }</style>
+        <div class="calculator">
+        <div class="display">0</div>
+        <div class="buttons">
+            <button
+  class="number">1</button>
+              <button
+  class="number">2</button>
+              <button
+  class="number">3</button>
+              <button
+  class="number">4</button>
+              <button
+  class="number">5</button>
+              <button
+  class="number">6</button>
+              <button
+  class="number">7</button>
+              <button
+  class="number">8</button>
+              <button
+  class="number">9</button>
+              <button
+  class="operator">*</button>
+              <button
+  class="number">0</button>
+              <button class="clear">C</button>
+              <button
+  class="equals">=</button>
+              <button
+  class="operators">/</button>
+          </div>
+    </body>
+    </html>
+    <link rel="stylesheet" href="style.css">
+    

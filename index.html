@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--The DOCTYPE declaration above is to inform browsers that we intend to use the standard HTMLS for this project-->
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Machine Learning Workshop</title>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="pop-upstyles.css">
+    <link rel="stylesheet" href="style.css">
+    <script>
+        // when the user clicks on <div>, open the popup
+            function myFunction() {
+                var popup = document.getElementById("myPopup");
+                popup.classList.toggle("show");
+            }
+    </script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="form.html">Form</a></li>
+                <li><a href="Calculator.html">Recent </a></li>
+            </ul>
+        </nav>
+        </header>
+       <div class="container">
+        <h1 id="h1-style">Welcome to project HTML and CSS</h1>
+        <P><a href="#copyright">Jump to Copyright</a></P>
+<main>
+    <div class="pulse"></div>
+        <h2 class="auto-bio">Autobiography</h2>
+        <article class="article-top">
+            <p>Working with HTML and CSS has been an amazing journey for me.
+                with just about 4 weeks in Technology and Education,
+                I have contributed to lots of projects that solved real world problems.
+                <!-- Code for Javascript Pop-up -->
+                 <div class="Pop-up" onclick="myFunction()">Read more..
+                    <span class="popuptext" id="myPopup"></span>
+                 </div>
+            </p>
+        </article>
+        <figure>
+            <figcaption>Caption</figcaption>
+            <img src="https://rb.gy/t62twv" alt="portfolio" class="img-style">
+        </figure>
+        <article class="article-bottom">
+                <p>Working with HTML and CSS has been an amazing journey for me.
+                    with just about 4 weeks in Technology and Education,
+                    I have contributed to lots of projects that solved real world problems.
+                    </p>
+        </article>
+        <button class="email-button"><a href="mailto:akadivictor7@gmail.com">Send a mail</a></button>
+        <button class="call-button"><a href="08148072602">Give us a call</a></button>
+        
+    </main>
+       <div></div>
+    <footer>
+        <p id="copyright">Copyright 2024 &copy;</p>
+    <footer>
+</body>
+</html>        
+    
+       

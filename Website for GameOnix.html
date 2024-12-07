@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameOnix</title>
+    <style>
+        /*Reset some default styles*/
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /* Basic styles */
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #333;
+            color:white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+        header h1 {
+            font-size: 2.5em;
+        }
+        .whatsapp-link {
+            display: inline-block;
+            margin-top: 10px;
+            color: #25d366;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+        .intro, .gallery {
+            margin-bottom: 20px;
+        }
+        .gallery-images img {
+            width: 100px;
+            max-width: 200px;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+        .gallery-images img:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        footer a {
+            color: #f1c40f;
+            text-decoration: none;
+        }
+    </style>
+    </head>
+    <body>
+        <!-- Header Section -->
+         <header>
+            <h1>Welcome to GameOnix</h1>
+            <p>Tour go-to hub for all thing gaming!</p>
+            <a
+        href="https://wa.me/08148072602"
+        class="whatsapp-link"
+        target="_blank">Join us on Whatsapp</a>
+         </header>
+
+         <!-- Main Content Section -->
+          <main>
+            <section class="intro">
+                <h2>About GameOnix</h2>
+                <p>GameOnix is a community dedicated to gaming enthusiasts. Join us on Whatsapp to stay updated with the latest in gaming!</p>
+            </section>
+            <section class="gallery">
+                <h2>Our Gallery</h2>
+                <div
+        class="gallery-images">
+                 <!-- Add images of your custom artwork or gaming-related content -->
+                          <img src="image1.jpg"
+           alt="Gaming Image 1">
+                           <img src="image2.jpg"
+            alt="Gaming Image 2">
+                         </div>
+                        </section>
+                    </main>
+
+                    <!-- Footer Section -->
+                     <footer>
+                        <p>&copy; 2024 GameOnix</p>
+                        <p>Follow us on
+                            <a
+            href="https://www.instagram.com/gameonix7"
+            target="_blank">Instagram</a> |
+                         <a
+            href="https://www.tiktok.com/@gameonix_hub"
+            target="_blank">Tiktok</a>
+                        </p>
+                     </footer>
+
+                     <script>
+
+             document.addEventListener("DOMContentLoaded", function() {
+                                                    const whatsapplink =
+             document.querySelector(".whatsapp-link");
+
+             whatsapplink.addEventListener("click", function(event) {
+                                                     const confirmjoin =
+             confirm("You are about to join our Whatsapp channel. Continue?");
+                                                     if (!confirmjoin) {
+
+            event.preventDefault(); // Stop the user from being redirected if they click "Cancel"
+                                                     }
+                                                });
+                                            });
+                     </script>
+                     </body>
+                     </html>
